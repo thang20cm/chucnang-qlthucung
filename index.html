@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style>
+  html{
+    scroll-padding-top:60px;
+  }
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9e6b55;
+  }
+.navbar{
+	background-color: brown;
+   border-radius:20px ;
+   
+}
+.container_header{
+	list-style:none;
+   text-align: center;
+   padding: 0px;
+   margin: 0px;
+   display: flex;
+   justify-content: center;
+   padding-right: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   
+ 
+}
+
+.container_header li a{
+	text-decoration:none;
+    margin-left:15px ;
+    color: aliceblue;
+    
+}
+#section1 {
+  height: 600px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+.them{
+    display: flex;
+    justify-content: center;
+    width: 1020px;
+    height: 625px;
+    border-radius:20px ;
+    color: #fff;
+}
+.parent-main{
+  padding-top: 60px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: 0.6s;
+    
+    z-index: 10000;
+    background-color: #ffbfa3;
+   
+}
+
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+display: flex;
+list-style: none;
+}
+nav li{
+    padding: 5px 10px;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    transition: all linear 0.5s;
+    margin-right: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px;
+}
+.active{
+    background: #e08963;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+.back-top{
+  width: 50px;
+  height: 50px;
+  background: #e08963;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+</style>
+</style>
+</head>
+<body>
+   <header>
+    <div class="container">
+        <div class="main-head">
+            <nav class="nav">
+            <ul>
+                <li class="links"><a href="#add">Thêm</a></li>
+                <li class="links"><a href="#delete">Xóa</a></li>
+                <li class="links"><a href="#change">Sửa</a></li>
+                <li class="links"><a href="#refresh">Làm Lại</a></li>
+                <li class="links"><a href="#timkiem">Tìm Kiếm</a></li>
+                <li class="links"><a href="#page">Phân Trang</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+   </header>
+   <div class="parent-main">
+<div class="main" id="add">
+
+  <fieldset class="them">
+  		<legend>Chức năng thêm</legend>
+        <video src="./video/them.mp4" width="1010" height="600" controls>
+            
+        </video>
+  </fieldset>
+</div>
+<div class="main" id="delete">
+
+    <fieldset class="them">
+            <legend>Chức năng xóa</legend>
+          <video src="./video/them.mp4" width="1010" height="600" controls>
+              
+          </video>
+    </fieldset>
+  </div>
+
+  <div class="main" id="change">
+
+    <fieldset class="them">
+            <legend>Chức năng sửa</legend>
+          <video src="./video/them.mp4" width="1010" height="600" controls>
+              
+          </video>
+    </fieldset>
+  </div>
+
+  <div class="main" id="refresh">
+
+    <fieldset class="them">
+            <legend>Chức năng làm lại</legend>
+          <video src="./video/them.mp4" width="1010" height="600" controls>
+              
+          </video>
+    </fieldset>
+  </div>
+
+  <div class="main" id="timkiem">
+
+    <fieldset class="them">
+            <legend>Chức năng tìm kiếm</legend>
+          <video src="./video/them.mp4" width="1010" height="600" controls>
+              
+          </video>
+    </fieldset>
+  </div>
+
+  <div class="main" id="page">
+
+    <fieldset class="them">
+            <legend>Chức năng phân trang</legend>
+          <video src="./video/them.mp4" width="1010" height="600" controls>
+              
+          </video>
+    </fieldset>
+  </div>
+   </div>
+   <div class="back-top"><i class="fa-brands fa-space-awesome"></i></div>
+<script>
+    const li = document.querySelectorAll(".links");
+    const sec = document.querySelectorAll(".main");
+
+    function activeMenu(){
+        let len=sec.length;
+        while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+        li.forEach(ltx=>ltx.classList.remove("active"));
+        li[len].classList.add("active");
+        }
+        activeMenu();
+        window.addEventListener("scroll",activeMenu);
+
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if ($(this).scrollTop()){
+          $('.back-top').fadeIn();
+        }
+        else{
+          $('.back-top').fadeOut();
+        }
+      });
+      $(".back-top").click(function(){
+        $('html,body').animate({
+          scrollTop:0
+        },800);
+      });
+    });
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+</body>
+</html>
